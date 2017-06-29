@@ -16,19 +16,19 @@
  *
  */
 
-package com.homeadvisor.kafdrop.service;
+package com.homeadvisor.kafdrop.service.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class PartitionNotFoundException extends RuntimeException
+public class BrokerNotFoundException extends RuntimeException
 {
-   public PartitionNotFoundException()
+   public BrokerNotFoundException()
    {
    }
 
-   public PartitionNotFoundException(String message)
+   public BrokerNotFoundException(String message)
    {
       super(message);
    }

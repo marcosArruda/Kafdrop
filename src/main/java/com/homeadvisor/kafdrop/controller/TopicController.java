@@ -20,9 +20,9 @@ package com.homeadvisor.kafdrop.controller;
 
 import com.homeadvisor.kafdrop.model.ConsumerVO;
 import com.homeadvisor.kafdrop.model.TopicVO;
-import com.homeadvisor.kafdrop.service.ConsumerNotFoundException;
+import com.homeadvisor.kafdrop.service.exceptions.*;
 import com.homeadvisor.kafdrop.service.KafkaMonitor;
-import com.homeadvisor.kafdrop.service.TopicNotFoundException;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

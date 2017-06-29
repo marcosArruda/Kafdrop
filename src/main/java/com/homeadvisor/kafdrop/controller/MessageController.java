@@ -24,7 +24,7 @@ import com.homeadvisor.kafdrop.model.MessageVO;
 import com.homeadvisor.kafdrop.model.TopicVO;
 import com.homeadvisor.kafdrop.service.KafkaMonitor;
 import com.homeadvisor.kafdrop.service.MessageInspector;
-import com.homeadvisor.kafdrop.service.TopicNotFoundException;
+import com.homeadvisor.kafdrop.service.exceptions.*;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;

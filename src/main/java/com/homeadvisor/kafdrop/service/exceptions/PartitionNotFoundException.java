@@ -16,20 +16,20 @@
  *
  */
 
-package com.homeadvisor.kafdrop.service;
+package com.homeadvisor.kafdrop.service.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class ConsumerNotFoundException extends RuntimeException
+public class PartitionNotFoundException extends RuntimeException
 {
-   public ConsumerNotFoundException(String message)
+   public PartitionNotFoundException()
    {
-      super(message);
    }
 
-   public ConsumerNotFoundException()
+   public PartitionNotFoundException(String message)
    {
+      super(message);
    }
 }

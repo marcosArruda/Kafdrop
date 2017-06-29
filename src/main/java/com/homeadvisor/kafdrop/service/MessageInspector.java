@@ -21,6 +21,8 @@ package com.homeadvisor.kafdrop.service;
 import com.homeadvisor.kafdrop.model.MessageVO;
 import com.homeadvisor.kafdrop.model.TopicPartitionVO;
 import com.homeadvisor.kafdrop.model.TopicVO;
+import com.homeadvisor.kafdrop.service.exceptions.PartitionNotFoundException;
+import com.homeadvisor.kafdrop.service.exceptions.TopicNotFoundException;
 import com.homeadvisor.kafdrop.util.BrokerChannel;
 import kafka.api.FetchRequest;
 import kafka.api.FetchRequestBuilder;

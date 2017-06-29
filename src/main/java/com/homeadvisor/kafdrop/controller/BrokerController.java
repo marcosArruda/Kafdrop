@@ -19,7 +19,7 @@
 package com.homeadvisor.kafdrop.controller;
 
 import com.homeadvisor.kafdrop.model.BrokerVO;
-import com.homeadvisor.kafdrop.service.BrokerNotFoundException;
+import com.homeadvisor.kafdrop.service.exceptions.BrokerNotFoundException;
 import com.homeadvisor.kafdrop.service.KafkaMonitor;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

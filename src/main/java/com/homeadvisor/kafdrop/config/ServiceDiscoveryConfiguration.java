@@ -151,7 +151,13 @@ public class ServiceDiscoveryConfiguration
          {
             // Work around an issue with the tomcat container, which uses the local port
             // as the port (-1) instead of the registered port
-            port = ((TomcatEmbeddedServletContainer) container).getTomcat().getConnector().getPort();
+            try{
+
+               port = ((TomcatEmbeddedServletContainer) container).getTomcat().getConnector().getPort();
+            }catch(NullPointerException e){
+               e.printStackTrace();
+               port = container.getPort();
+            }
          }
          else
          {

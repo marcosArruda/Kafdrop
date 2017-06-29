@@ -22,6 +22,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Throwables;
 import com.google.common.collect.ImmutableMap;
 import com.homeadvisor.kafdrop.model.*;
+import com.homeadvisor.kafdrop.service.exceptions.BrokerNotFoundException;
+import com.homeadvisor.kafdrop.service.exceptions.NotInitializedException;
 import com.homeadvisor.kafdrop.util.BrokerChannel;
 import com.homeadvisor.kafdrop.util.Version;
 import kafka.api.ConsumerMetadataRequest;

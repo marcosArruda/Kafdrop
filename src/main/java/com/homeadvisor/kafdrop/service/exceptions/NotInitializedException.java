@@ -16,7 +16,7 @@
  *
  */
 
-package com.homeadvisor.kafdrop.service;
+package com.homeadvisor.kafdrop.service.exceptions;
 
 public class NotInitializedException extends RuntimeException
 {

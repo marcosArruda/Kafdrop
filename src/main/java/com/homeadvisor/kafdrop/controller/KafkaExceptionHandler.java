@@ -18,7 +18,7 @@
 
 package com.homeadvisor.kafdrop.controller;
 
-import com.homeadvisor.kafdrop.service.NotInitializedException;
+import com.homeadvisor.kafdrop.service.exceptions.NotInitializedException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 

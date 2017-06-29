@@ -31,6 +31,14 @@ repositories {
 	}
 }
 
+configurations {
+	//compile.exclude group: "org.springframework.boot", module: "spring-boot-starter-logging"
+	compile.exclude module: 'slf4j-log4j12'
+	compile.exclude module: 'jms'
+	compile.exclude module: 'jmxtools'
+	compile.exclude module: 'jmxri'
+}
+
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
@@ -48,9 +56,10 @@ dependencies {
 
 	compile("commons-lang:commons-lang:2.6")
 
-	compile("org.apache.curator:curator-x-discovery:3.3.0")
-	// https://mvnrepository.com/artifact/org.apache.curator/curator-recipes
-	compile("org.apache.curator:curator-recipes:3.3.0")
+	compile("org.apache.curator:curator-recipes:2.10.0")
+	compile("org.apache.curator:curator-x-discovery:2.10.0")
+
+
 	compile("org.apache.zookeeper:zookeeper:3.4.8")
 	compile("org.apache.kafka:kafka_2.9.2:0.8.2.2")
 	compile("org.freemarker:freemarker:2.3.23")
