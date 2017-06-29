@@ -26,4 +26,3 @@ if [ $JMX_PORT ]; then
 fi
 
 java $JMX_ARGS $HEAP_ARGS -jar /kafdrop*/kafdrop*jar
-

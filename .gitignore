@@ -3,8 +3,10 @@
 .classpath
 .settings/
 **/Thumbs.db
-target
+target/
 *.iml
 *.iws
 *.ipr
 .idea/
+build/
+.gradle/
