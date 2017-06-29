@@ -8,12 +8,22 @@ Kafdrop is a UI for monitoring Apache Kafka clusters. The tool displays informat
 * Kafka (0.8.1 or 0.8.2 is known to work)
 * Zookeeper (3.4.5 or later)
 
+# !!! Latest Changes (forked project) !!!
+
+- Added gradle **3.5** support
+- Removed maven support
+- Upgraded SpringBoot to **1.5.3-RELEASE**
+- Ugraded Apache Curator dependencies to **3.3.0**
+- Removed *.ini.* package
+    - I will recreate the logging classes again in the future. For now, no remote logging support;
+- Updated README.md(this file)
+
 ## Building
 
 After cloning the repository, building should just be a matter of running a standard Maven build:
 
 ```
-$ mvn clean package
+$ ./gradlew clean build
 ```
 
 ## Running Stand Alone
@@ -21,7 +31,7 @@ $ mvn clean package
 The build process creates an executable JAR file.  
 
 ```
-java -jar ./target/kafdrop-<version>.jar --zookeeper.connect=<host>:<port>,<host>:<port>,...
+java -jar ./build/libs/kafdrop-<version>.jar --zookeeper.connect=<host>:<port>,<host>:<port>,...
 ```
 
 Then open a browser and navigate to http://localhost:9000. The port can be overridden by adding the following config:
@@ -41,7 +51,7 @@ Note for Mac Users: You need to convert newline formatting of the kafdrop.sh fil
 The following maven command will generate a Docker image:
 
 ```
-    mvn clean package assembly:single docker:build
+    TODO: change this -> mvn clean package assembly:single docker:build
 ```
 
 
